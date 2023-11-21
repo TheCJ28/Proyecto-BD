@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formato de inscripcion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Formato de inscripcion</h2>
+      <form action="procesar.php" method="post">
+        <div class="form-group">
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input type="text" name="apellido" placeholder="Apellido" required />
+          <input type="text" name="edad" placeholder="ID" required />
+          <input type="email" name="correo" placeholder="Email" required />
+          <input type="text" name="telefono" placeholder="Telefono" required />
+        </div>
+        
+        <div class="form-group">
+          <select id="especie" name="sexo">
+            <option value="sexo" selected disabled>Plataforma de juego</option>
+            <option value="Femenino">PC</option>
+            <option value="Masculino">Consola</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <h1>Categoria de juego especializado:</h1>
+          <fieldset>
+            <input type="radio" id="isapre" name="sistemaSalud" value="Juegos de disparos" />
+            <label for="isapre">Juegos de disparos</label>
+          
+            <input type="radio" id="fonasa" name="sistemaSalud" value="Juegos de estrategia" />
+            <label for="fonasa">Juegos de estrategia</label>
+          
+            <input type="radio" id="particular" name="sistemaSalud" value="Juegos de rol" />
+            <label for="particular">Juegos de rol</label>
+          
+            <input type="radio" id="fuerzasMilitares" name="sistemaSalud" value="Juegos de carreras" />
+            <label for="fuerzasMilitares">Juegos de carreras</label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <h1>Juego a seleccionar:</h1>
+          <fieldset>
+            <input type="checkbox" id="opcion1" name="alergia" value="Call of Duty: Warzone" />
+            <label for="opcion1">Call of Duty: Warzone</label>
+
+            <input type="checkbox" id="opcion2" name="alergia" value="Age of Empires IV" />
+            <label for="opcion2">Age of Empires IV</label>
+
+            <input type="checkbox" id="opcion3" name= "alergia" value="Cyberpunk 2077" />
+            <label for="opcion3">Cyberpunk 2077</label>
+
+            <input type="checkbox" id="opcion4" name="alergia" value="Forza Horizon 5" />
+            <label for="opcion4">Forza Horizon 5</label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <h1>Grupos de jugadores:</h1>
+          <fieldset>
+            <input type="radio" id="aPositivo" name="sangre" value="1" />
+            <label for="aPositivo">1</label>
+          
+            <input type="radio" id="aNegativo" name="sangre" value="2" />
+            <label for="aNegativo">2</label>
+          
+            <input type="radio" id="bPositivo" name="sangre" value="3" />
+            <label for="bPositivo">3</label>
+          
+            <input type="radio" id="bNegativo" name="sangre" value="4" />
+            <label for="bNegativo">4</label>
+          
+            <input type="radio" id="abPositivo" name="sangre" value="5" />
+            <label for="abPositivo">5</label>
+          
+            <input type="radio" id="abNegativo" name="sangre" value="6" />
+            <label for="abNegativo">6</label>
+          
+            <input type="radio" id="oNegativo" name="sangre" value="7" />
+            <label for="oNegativo">7</label>
+          
+            <input type="radio" id="oPositivo" name="sangre" value="8" />
+            <label for="oPositivo">8</label>
+          </fieldset>
+        </div>
+        <div class="form-group">
+          <h1 for="observaciones">Observaciones:</h1>
+          <textarea id="observaciones" name="observaciones"></textarea>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="aceptaTerminos" name="aceptaTerminos" value="aceptaTerminos" />
+          <label for="aceptaTerminos">Acepta los terminos y condiciones</label>
+        </div>
+
+        <button type="reset">Limpiar</button>
+        <input type="submit" value="Registrar"></input>
+        <button type="button" onclick="mostrarRegistros()">Mostrar Registros</button>
+        
+      </form>
+
+      <script>
+          function mostrarRegistros() {
+              window.location.href = 'mostrarRegistros.php';
+          }
+      </script>
+    </div>
+  </body>
+</html>
+

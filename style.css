@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  height: 500px;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center center;
+  background-image: url('fondo.jpg');
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent;
+  border-radius: 8px;
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.678);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+form {
+  margin: 25px auto;
+  width: 500px;
+}
+input{
+  padding: 17px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+   margin-bottom: 3px;
+   outline:none ;
+   color: #ffffff;
+   font-size: 16px;
+}
+
+label {
+  color: white;
+  font-weight: normal;
+}
+
+h1 {
+  color: white;
+  font-size: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 150%;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fafafa;
+  border-radius: 28px;
+  background-color: rgb(88, 117, 245);
+  margin-bottom: 5px;
+}
+::placeholder{
+  color: black;
+}
+
+button {
+  background-color: #850606;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+label[for="aceptaTerminos"] {
+  margin-bottom: 10px; 
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Videojuegos</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <div>
+        <form action="/proyectoBd/procesar.php" method="post">
+            <h2>Inscripcion al Torneo de Videojuegos</h2>
+        
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre_completo" required>
+        
+            <label for="correo">Correo electronico:</label>
+            <input type="email" id="correo" name="correoelectronico" required>
+        
+            <label for="telefono">Numero de telefono:</label>
+            <input type="tel" id="telefono" name="numerodetelefono" required>
+        
+            <label for="coreo electronico">Nombre de usuario:</label>
+            <input type="text" id="coreo electronico" name="nombredeusuario">
+        
+            <label for="miembros_equipo">Nombres de los miembros del equipo:</label>
+            <textarea id="miembros_equipo" name="nombresdeequipos" rows="4"></textarea>
+        
+            <label for="gamertags">Identificadores de juego:</label>
+            <textarea id="gamertags" name="identificadoresjuego" rows="4"></textarea>
+        
+            <label for="nombre_juego">Nombre del juego:</label>
+            <input type="text" id="nombre_juego" name="nombredeljuego" required>
+        
+            <label for="plataforma">Plataforma de juego:</label>
+            <select id="plataforma" name="plataforma" required>
+                <option value="PC">PC</option>
+                <option value="consola">Consola</option>
+            </select>
+            <label for="cuenta_juego">Cuenta de juego o ID de jugador:</label>
+            <input type="text" id="cuenta_juego" name="cuentadejuego" required>
+        
+            <input type="submit" value="Enviar inscripcion">
+            <button type="button" onclick="mostrarRegistros()">Mostrar Registros</button>
+        </form>
+        <script>
+            function mostrarRegistros() {
+                window.location.href = 'mostrarRegistros.php';
+            }
+        </script>
+    </div>
+</body>
+</html>
